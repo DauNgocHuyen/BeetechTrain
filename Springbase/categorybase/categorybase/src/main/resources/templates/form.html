@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Create new category</h1>
+	<form method="post" th:object="${category}" enctype="multipart/form-data">
+	    <table>
+	        <tr>
+	            <td>Id</td>
+	            <td><input type="text" th:field="*{id}"></td>
+	        </tr>
+	        <tr>
+	            <td>Name</td>
+	            <td><input type="text" th:field="*{name}"></td>
+	        </tr>
+	       
+	        <tr>
+	            <td></td>
+	            <td><input type="submit" value="Create"></td>
+	        </tr>
+	    </table>
+	</form>
+</body>
+</html>
